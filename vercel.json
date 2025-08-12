@@ -2,34 +2,29 @@
   "version": 2,
   "builds": [
     {
-      "src": "public/**/*.@(html|css|js|svg|jpg|png)",
-      "use": "@vercel/static"
+      "src": "public/**/*",
+      "use": "@vercel/static",
+      "config": {
+        "mimeTypes": {
+          ".css": "text/css",
+          ".js": "application/javascript",
+          ".svg": "image/svg+xml",
+          ".jpg": "image/jpeg",
+          ".png": "image/png"
+        }
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/public/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/(.*).css",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/css"
+      "dest": "/public/index.html",
+      "headers": {
+        "Content-Type": {
+          ".css": "text/css",
+          ".js": "application/javascript"
         }
-      ]
-    },
-    {
-      "source": "/(.*).js",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
+      }
     }
   ]
 }
