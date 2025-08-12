@@ -2,36 +2,34 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.css",
-      "use": "@vercel/static",
-      "config": {
-        "mimeTypes": {
-          ".css": "text/css"
-        }
-      }
-    },
-    {
-      "src": "*.js",
-      "use": "@vercel/static",
-      "config": {
-        "mimeTypes": {
-          ".js": "application/javascript"
-        }
-      }
-    },
-    {
-      "src": "assets/*",
+      "src": "public/**/*.@(html|css|js|svg|jpg|png)",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/public/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*).css",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/css"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
     }
   ]
 }
