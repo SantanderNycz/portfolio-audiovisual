@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Audiovisual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h2>Léo Santander Nycz</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Edições de áudio e vídeo</h1>
+            <p class="hero-subtitle">Transformamos ideias em narrativas visuais!</p>
+            <a href="#portfolio" class="cta-button">Ver Portfolio</a>
+        </div>
+        <div class="hero-video" style="position: relative; display: inline-block;">
+            <a href="https://www.youtube.com/watch?v=slw2YH9kzeo" target="_blank">
+                <img src="./assets/mestre-cuca.jpg" alt="Assista no YouTube" style="width:100%; height:auto; display:block; border-radius:8px;">
+                <svg width="80" height="80" viewBox="0 0 80 80" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                    <polygon points="30,20 55,40 30,60" fill="#ecab0f" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="video-item" data-category="quadro">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://youtube.com/watch?v=_ySdB0NxN7w" target="_blank">
+                            <img src="./assets/tocando-nebulosamente.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Quadro</h3>
+                            <p>Tocando Nebulsamente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-item" data-category="lyric">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=raUvTDBsgYE" target="_blank">
+                            <img src="./assets/nebulosa.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Lyric Video</h3>
+                            <p>Nebulosa - Bemvirá</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="quadro">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=57b1-oR_U0U" target="_blank">
+                            <img src="./assets/asmr.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Quadro</h3>
+                            <p>ASMR</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="clipe">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=BhGvurWTqZA" target="_blank">
+                            <img src="./assets/Deveras-lofi.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Clipe</h3>
+                            <p>Deveras (LoFi) - Bemvirá</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="quadro">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=qew11EYkI_A" target="_blank">
+                            <img src="./assets/qualnota.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Quadro</h3>
+                            <p>Qual a nota, maestro?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="lyric">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=dRyNPce8ga0" target="_blank">
+                            <img src="./assets/astronauta.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Lyric Video</h3>
+                            <p>Astronauta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="lyric">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=4ZnDqsNtprl" target="_blank">
+                            <img src="./assets/foi.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Lyric Video</h3>
+                            <p>Foi - Bemvirá</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="quadro">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://youtube.com/watch?v=CmAeW-LZtF8" target="_blank">
+                            <img src="./assets/comenta.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Quadro</h3>
+                            <p>Bemvirá Comenta</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="quadro">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=Ky437_Csnyo" target="_blank">
+                            <img src="./assets/pé-da-letra.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Quadro</h3>
+                            <p>Ao pé da letra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="quadro">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=BzXtQHXoFeg" target="_blank">
+                            <img src="./assets/perguntas.jpg" alt="" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Quadro</h3>
+                            <p>Perguntas Frequentes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-item" data-category="clipe">
+                    <div class="video-thumbnail" style="position: relative; display: inline-block;">
+                        <a href="https://www.youtube.com/watch?v=ruCDanIUxB4" target="_blank">
+                            <img src="./assets/sequestro.jpg" alt="Clipe: Sequestro do Menino Errado" style="width:100%; height:auto; display:block; border-radius:8px;">
+                            <svg width="40" height="40" viewBox="0 0 40 40" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.5); border-radius:50%;">
+                                <polygon points="15,10 30,20 15,30" fill="#ecab0f" />
+                            </svg>
+                        </a>
+                        <div class="video-info">
+                            <h3>Clipe</h3>
+                            <p>Sequestro do Menino Errado - Bemvirá</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="quadro">Quadro</button>
+                <button class="filter-btn" data-filter="clipe">Clipe</button>
+                <button class="filter-btn" data-filter="lyric">Lyric</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p>Sou um editor de áudio e vídeo apaixonado pelo universo musical, com especial interesse em lyric videos e projetos criativos.</p>
+                    <p>Combino criatividade e atenção aos detalhes para entregar resultados que encantem e comuniquem a essência de cada projeto, colaborando no pré, seja do roteiro, até o pós, focado em criar um enredo único para o cliente.</p>
+                </div>
+                <div class="sobre-mim-imagem">
+                    <img src="./assets/leo.jpg" alt="Foto de Leonardo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Entre em Contato</h3>
+                    <p>Pronto para dar vida ao seu próximo projeto audiovisual?</p>
+                    <div class="contact-item">
+                        <strong>Email:</strong> santandernycz.ls@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Telefone:</strong> +351 915 619 867
+                    </div>
+                    <div class="contact-item">
+                        <strong>Localização:</strong> Porto, PT
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <input type="text" placeholder="Assunto" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="video-container">
+                <video id="modalVideo" controls>
+                    <source src="/placeholder.svg" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
