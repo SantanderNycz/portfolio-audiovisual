@@ -68,6 +68,7 @@ filterButtons.forEach((button) => {
 // Video Modal
 const modal = document.getElementById("videoModal");
 const modalVideo = document.getElementById("modalVideo");
+const closeModal = document.querySelector(".close");
 const playButtons = document.querySelectorAll(".play-button");
 
 // Sample video URLs (replace with actual video URLs)
@@ -95,6 +96,13 @@ playButtons.forEach((button) => {
     console.log(`Loading video: ${videoId}`);
     // modalVideo.src = videoUrls[videoId];
   });
+});
+
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+  modalVideo.pause();
+  modalVideo.src = "";
 });
 
 window.addEventListener("click", (e) => {
